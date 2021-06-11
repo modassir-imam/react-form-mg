@@ -1,7 +1,7 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
 import validate from "./validate";
-import asyncValidate from "./asyncValidate";
+//import asyncValidate from "./asyncValidate";
 
 const renderField = ({
   input,
@@ -61,6 +61,6 @@ const AsyncValidationForm = (props) => {
 export default reduxForm({
   form: "asyncValidation", // a unique identifier for this form
   validate,
-  asyncValidate,
+  //asyncValidate,
   asyncBlurFields: ["username"]
 })(AsyncValidationForm);
